@@ -7,125 +7,28 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <style>
-         
-          * {
-            background:#43C466;
-            padding: 0;
-            margin: 0;
-          }
-
-          .navbar {
-            background-color: #5E17EB;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            height: 60px;
-          }
-
-          .primary-icon{
-            background-color:#5E17EB;
-            height: 30px;
-            margin-left: -150px;
-            margin-bottom: 10px;
-          }
-
-          .nav-list {
-            background-color:#5E17EB;
-            list-style-type: none;  
-            margin-right: -150px;
-          }
-
-          .nav-list .list-item {
-            background-color:#5E17EB;
-            display: inline-block;
-          }
-
-          .navbar a {
-            color: white;
-            text-decoration: none;
-          }
-        </style>
+        nav { 
+          background: rgb(2,0,36);
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 97%);
+        }
+      </style>
     </head>
     <body>
-
         <header>
-            <nav class="navbar">
-              <div>
-                <a href="#">
-                  <img class="primary-icon" src="logo.png">
-                </a>
-              </div>  
-              <div style="background-color: #5E17EB">
-                <p style="background-color: #5E17EB;">CC APPWEB</p> 
-              </div>    
-              <ul class="nav-list">
-                <li class="list-item">
-                  <a class="btn btn-warning" href="#" role="button">Login</a>
-                </li>
-                <li class="list-item">
-                  <a class="btn btn-warning" href="#" role="button">Cadastrar</a>
-                </li>
-              </ul>        
-            </nav> 
+          <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                CC APPWEB
+              </a>
+              <a class="navbar-brand" href="#">
+                Login
+              </a>
+              <a class="navbar-brand" href="#">
+                Cadastrar
+              </a>
+            </div> 
+          </nav>
         </header>
-        <div style="padding: 5px 5px;">
-          <h1 class="text-center"> CONTROLE DE CARTEIRA WEB </h1>
-          <br>
-          <p>
-             Site baseado no Status Invest (https://statusinvest.com.br) e que tem como objetivo fornecer visualizações do patrimônio e dos 
-            investimentos, ao longo do tempo, em forma de gráficos e tabelas, permitindo ao cliente controlar com facilidade e segurança seus investimento.
-          </p> 
-        </div>
-        <div>
-          <h1> A partir daqui a página será um modelo de dashboard </h1>
-          <div style="padding: 5px 5px;">
-            <h1 class="text-center"> TABELAS </h1>
-            <br>
-            
-            <div class="table-responsive">
-              <table class="table">
-                <table class="table caption-top">
-                  <caption>List of users</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </table>
-            </div>
-
-          </div>
-          <div style="padding: 5px 5px;">
-            <h1 class="text-center"> GRAFICOS </h1>
-            <br>
-            <p>
-              GRAFICO COM OS DADOS DA TABELA
-            </p> 
-          </div>
-      </div>
     </body>
 </html>
