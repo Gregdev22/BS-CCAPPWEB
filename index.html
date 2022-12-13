@@ -6,29 +6,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"> </script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script> -->
         <style>
         nav { 
           background: rgb(2,0,36);
           background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 97%);
         }
+
+        table {
+          width: 50%;
+          text-align: center;
+          margin-right: auto;
+          margin-left: auto;
+          border: 1px solid;
+        }
+
+        td {
+          border: 1px solid;
+          width: 50%;
+        }
+
+        th {
+          border: 1px solid;
+          width: 50%;
+        }
+
       </style>
     </head>
     <body>
         <header>
           <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="#" style="color:aliceblue">
+                <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" >
                 CC APPWEB
               </a>
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="#" style="color:aliceblue">
                 Login
               </a>
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="#" style="color:aliceblue">
                 Cadastrar
               </a>
             </div> 
           </nav>
         </header>
+        <div>
+         <h1  style="text-align: center;" >Paragrafo explicando o app</h1> 
+         <hr>
+         <p style="padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr>
+        </div>
+        <div>
+          <h1 style="text-align: center;" >Tabela Abaixo</h1>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" >Dia</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!--<th scope="row">1</th>-->
+                <td class="dia">1</td>
+                <td id="teste">50,00</td>
+              </tr>
+              <tr>
+                <!--<th scope="row">2</th>-->
+                <td class="dia">2</td>
+                <td>100,00</td>
+              </tr>
+              <tr>
+                <!--<th scope="row">2</th>-->
+                <td class="dia">3</td>
+                <td>100,00</td>
+              </tr>
+              <tr>
+                <!--<th scope="row">2</th>-->
+                <td class="dia">4</td>
+                <td>50,00</td>
+              </tr>
+              <tr>
+                <!--<th scope="row">2</th>-->
+                <td class="dia">5</td>
+                <td>200,00</td>
+              </tr>
+              <tr>
+                <!--<th scope="row">2</th>-->
+                <td class="dia">6</td>
+                <td>300,00</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+        <div>
+          <h1  style="text-align: center;" >Grafico gerado da tabela acima</h1>
+          <div id="myChart" style="max-width:700px; height:400px"></div>
+          <!--<canvas id="myChart" style="width:100%;max-width:700px"></canvas>-->
+        </div>
+        <script src="script.js"></script>    
     </body>
 </html>
